@@ -120,3 +120,28 @@ body {
   width: 50%;
   margin: 0px 0px 10px 10px;
 }
+
+
+
+/*======================Responsible================*/
+
+@media only screen and (max-width:600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-register {
+    width: 80%;
+  }
+
+ .left-register {
+   width: auto;
+   height: 50%;
+   margin-top: 20px;
+ }
+
+ .redes {
+   display: none;
+ }
+}
