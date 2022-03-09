@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@300;400;500;700;800&display=swap');
+
+/*======================Varibles==================*/
+
+:root {
+  --font1: 'Noto Sans', sans-serif;
+  --font2: 'Poppins', sans-serif;
+
+  --color-primaria: #012030;
+  --color-secundaria: #13678a;
+  --color-terceira: #45c4b0;
+  --color-background: rgb(236, 236, 236);
+  --color-background-content: white;
+
+  --color-white: white;
+}
+
+/*========================Body=======================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font1);
+}
+
+body {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--color-background);
+}
+
+.container {
+  width: 90vw;
+  height: 100vh;
+  margin: auto;
+
+  background-color: var(--color-background-content);
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 10vh 70vh 70vh 10vh;
+
+  grid-template-areas:
+    'header header'
+    'main aside'
+    'section section'
+    'footer footer';
+}
+
+/*==============Header=========================*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  grid-area: header;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-primaria);
+
+  margin-left: 10px;
+}
+
+.btn-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20vw;
+  height: 5vh;
+
+  border: 1px solid black;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 700;
+
+  margin-right: 10px;
+}
+
+/*====================Main========================*/
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  grid-area: main;
+
+  background: white url(imagens/mobile.jpg) left top no-repeat fixed;
+}
+
+/*===arumar-tamanho-font-size====*/
+.main > h1 {
+  font-size: 3em;
+  color: var(--color-primaria);
+  font-weight: 400;
+
+  margin: 30px;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.main > p {
+  font-size: 1.2em;
+  color: var(--color-primaria);
+  font-weight: 500;
+
+  margin: 30px;
+}
+
+.btn-meio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20vw;
+  height: 5vh;
+
+  border: 1px solid black;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--color-primaria);
+  color: var(--color-white);
+  font-weight: 700;
+
+  margin: 30px;
+}
+
+/*====================Aside=========================*/
+
+.aside {
+  background-color: #45c4b0;
+
+  grid-area: aside;
+}
+
+/*=====================Section========================*/
+.section {
+  background-color: purple;
+
+  grid-area: section;
+}
+
+/*======================Footer=============================*/
+.footer {
+  background-color: rebeccapurple;
+
+  grid-area: footer;
+}
