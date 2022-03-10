@@ -89,6 +89,19 @@ body {
   margin-right: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-top:hover {
+  background-color: #3e5661;
+}
+
+.btn-top > a {
+  color:var(--color-primaria);
+}
+
 /*====================Main========================*/
 .main {
   display: flex;
@@ -125,10 +138,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   width: 20vw;
   height: 5vh;
-
+  
   border: 1px solid black;
   outline: none;
   border-radius: 10px;
