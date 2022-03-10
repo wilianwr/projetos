@@ -11,6 +11,8 @@
   --color-terceira: #45c4b0;
   --color-background: rgb(236, 236, 236);
   --color-background-content: white;
+  --color-comentario: rgb(231, 229, 229);
+  --color-logo: #044261;
 
   --color-white: white;
 }
@@ -64,7 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color: var(--color-primaria);
+  color: var(--color-logo);
 
   margin-left: 10px;
 }
@@ -142,21 +144,99 @@ body {
 /*====================Aside=========================*/
 
 .aside {
-  background-color: #45c4b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   grid-area: aside;
 }
 
+.aside > h3 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--color-primaria);
+
+  margin-top: 40px;
+}
+
 /*=====================Section========================*/
 .section {
-  background-color: purple;
+  background-color: var(--color-primaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   grid-area: section;
 }
 
+.left-person {
+  width: 50vw;
+  height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-person img {
+  width: 50vw;
+  height: 70vh;
+
+  display: inline-block;
+}
+
+.comentario {
+  width: 50vw;
+  height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.comentario > p {
+  color: var(--color-comentario);
+  letter-spacing: 1px;
+  line-height: 30px;
+
+  margin-top: 40px;
+}
+
+.comentario > h2 {
+  font-size: 2.5em;
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.works {
+  font-weight: 700;
+}
+
+.name {
+  color: var(--color-white);
+  font-weight: 700;
+
+  margin-bottom: -40px;
+}
+
 /*======================Footer=============================*/
 .footer {
-  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   grid-area: footer;
+}
+
+.logo-bottom {
+  color: var(--color-logo);
+  
+  margin-left: 10px;
+}
+
+.footer > p {
+  font-size: 0.8em;
+  color: rgb(110, 110, 110);
 }
