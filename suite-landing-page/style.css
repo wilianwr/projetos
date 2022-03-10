@@ -101,9 +101,8 @@ body {
   background: white url(imagens/mobile.jpg) left top no-repeat fixed;
 }
 
-/*===arumar-tamanho-font-size====*/
 .main > h1 {
-  font-size: 3em;
+  font-size: 4em;
   color: var(--color-primaria);
   font-weight: 400;
 
@@ -152,7 +151,23 @@ body {
   grid-area: aside;
 }
 
-.aside > h3 {
+.companies > h3 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--color-primaria);
+
+  margin-top: 40px;
+}
+
+.languages > h3 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--color-primaria);
+
+  margin-top: 40px;
+}
+
+.leads > h3 {
   font-size: 2.5em;
   font-weight: 700;
   color: var(--color-primaria);
@@ -232,11 +247,231 @@ body {
 
 .logo-bottom {
   color: var(--color-logo);
-  
+
   margin-left: 10px;
 }
 
 .footer > p {
   font-size: 0.8em;
   color: rgb(110, 110, 110);
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes > img {
+  width: 2vw;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/*===================RESPONSIBLE-TABLET=================*/
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 10vh 70vh 20vh 80vh 10vh;
+
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-areas:
+      'header'
+      'main'
+      'aside'
+      'section'
+      'footer';
+  }
+
+  /*===============Reseposible-header-tablet============*/
+
+  .header {
+    grid-area: header;
+  }
+
+  .logo {
+    margin: 20px;
+  }
+
+  .btn-top {
+    margin-right: 20px;
+    width: 30%;
+    height: 50;
+  }
+
+  /*==============Reseposible-main-tablet============*/
+
+  .main {
+    grid-area: main;
+  }
+
+  .btn-meio {
+    width: 30%;
+    height: 8%;
+  }
+
+  /*================Reseposible-aside-tablet============*/
+
+  .aside {
+    grid-area: aside;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: unset;
+    text-align: center;
+  }
+
+  .companies > h3 {
+    font-size: 3em;
+  }
+
+  .languages > h3 {
+    font-size: 3em;
+  }
+
+  .leads > h3 {
+    font-size: 3em;
+  }
+
+  /*================Reseposible-section-tablet============*/
+
+  .section {
+    grid-area: section;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .left-person {
+    width: 100%;
+    height: 50%;
+  }
+
+  .left-person > img {
+    width: 100%;
+    height: 90%;
+  }
+
+  .comentario {
+    width: 100%;
+    height: auto;
+  }
+
+  /*===============Reseposible-footer-tablet============*/
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .logo-bottom {
+    margin-left: 20px;
+  }
+
+  .redes {
+    width: 20%;
+  }
+}
+
+/*=============RESPONSIBLE-MOBILE============*/
+
+@media only screen and (max-width: 610px) {
+  .container {
+    grid-template-columns: 3fr;
+    grid-template-rows: 10vh 90vh 70vh 90vh 20vh;
+
+    grid-template-areas:
+      'footer'
+      'main'
+      'aside'
+      'section'
+      'footer';
+  }
+
+  /*================Responsible-header-mobile===========*/
+
+  .header {
+    grid-area: header;
+  }
+
+  .btn-top {
+    height: 50%;
+    width: 50%;
+  }
+  /*================Responsible-main-mobile===========*/
+  .main {
+    grid-area: main;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main > h1 {
+    font-size: 3em;
+  }
+
+  .btn-meio {
+    width: 60%;
+  }
+  /*================Responsible-aside-mobile===========*/
+
+  .aside {
+    grid-area: aside;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  /*================Responsible-section-mobile===========*/
+
+  .section {
+    grid-area: section;
+    border-radius: 10px;
+  }
+
+  .comentario {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+  }
+
+  /*================Responsible-footer-mobile===========*/
+
+  .footer {
+    grid-area: footer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    
+  }
+
+  .logo-bottom {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .redes {
+    margin: 10px 0px 20px 0px;
+  }
+
+  .redes > img {
+    width: 30%;
+  }
 }
