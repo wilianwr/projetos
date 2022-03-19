@@ -6,7 +6,7 @@
   --font-title: 'Open Sans', sans-serif;
   --font01: 'Poppins', sans-serif;
 
-  --color-btn: #EA6017;
+  --color-btn: #ea6017;
   --color-text-out: #263363;
   --color-text-inside: #c6cde2;
   --color-title-out: #171f3d;
@@ -15,7 +15,7 @@
   --color-white: rgb(233, 233, 233);
   --color-dark: rgb(31, 31, 31);
   --color-menu-logo: rgb(226, 243, 248);
-  --color-logo: #EA6017;
+  --color-logo: #ea6017;
   --color-menu: #d9dce4;
   --color-footer: #171f3d;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 .background {
-  background-image: linear-gradient(to right,#152760, #EA6017);
+  background-image: linear-gradient(to right, #152760, #ea6017);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -111,6 +111,27 @@ body {
   background-color: #d8822669;
   border-radius: 10px;
   color: var(--color-white);
+}
+
+#load {
+  margin: 10px;
+  color: #ac4e23;
+  width: 30px;
+  height: 30px;
+  border: 10px solid;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation-name: load;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes load {
+  to {
+   /*Faz rodar um volta completa 360*/
+   transform: rotate(360deg);
+  } 
 }
 
 /*==============Main-container================*/
@@ -384,7 +405,7 @@ footer > p {
 }
 
 footer > p:hover {
-  color: #EA6017;
+  color: #ea6017;
   transform: translateY(5px);
   transition: 0.5s;
 }
@@ -402,8 +423,6 @@ footer > p:hover {
 }
 
 @media only screen and (max-width: 400px) {
-
-
   .btns {
     flex-direction: column;
   }
