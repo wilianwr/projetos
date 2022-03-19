@@ -114,10 +114,10 @@ body {
 }
 
 #load {
-  margin: 10px;
+  margin: 0.625rem;
   color: #ac4e23;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   border: 10px solid;
   border-radius: 50%;
   border-top-color: transparent;
