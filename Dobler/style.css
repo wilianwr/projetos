@@ -6,13 +6,18 @@
   --font-title: 'Open Sans', sans-serif;
   --font01: 'Poppins', sans-serif;
 
-  --color-text: #516879;
-  --color-title: #1a3a52;
-  --color-background: #9fb4c7;
-  --color-background-esgotado: #969696;
+  --color-btn: #EA6017;
+  --color-text-out: #263363;
+  --color-text-inside: #c6cde2;
+  --color-title-out: #171f3d;
+  --color-title-inside: #ffffff;
+  --color-background: #152760;
   --color-white: rgb(233, 233, 233);
   --color-dark: rgb(31, 31, 31);
   --color-menu-logo: rgb(226, 243, 248);
+  --color-logo: #EA6017;
+  --color-menu: #d9dce4;
+  --color-footer: #171f3d;
 }
 
 * {
@@ -76,7 +81,7 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-menu-logo);
+  color: var(--color-logo);
 }
 
 .menu ul {
@@ -98,13 +103,13 @@ body {
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--color-menu-logo);
+  color: var(--color-menu);
   padding: 0.625rem;
   transition: 0.5s;
 }
 
 .menu ul a:hover {
-  background-color: #91919169;
+  background-color: #d8822669;
   border-radius: 10px;
   color: var(--color-white);
 }
@@ -133,11 +138,13 @@ body {
 .title > h1 {
   font-size: 2rem;
   font-family: var(--font-title);
+  color: var(--color-title-out);
 }
 
 .title > p {
   font-size: 1rem;
   margin-top: 1.25rem;
+  color: var(--color-text-out);
 }
 
 .btns {
@@ -155,7 +162,7 @@ body {
   border: 0;
   outline: none;
   cursor: pointer;
-  background-color: aqua;
+  background-color: var(--color-btn);
   color: var(--color-white);
   font-weight: 600;
   font-size: 1rem;
@@ -163,8 +170,8 @@ body {
 }
 
 .left-btn:hover {
-  background-color: aquamarine;
-  color: #296392;
+  background-color: #ac4e23;
+  color: #ffffff;
 }
 
 .right-btn {
@@ -173,15 +180,15 @@ body {
   border: 0;
   outline: none;
   cursor: pointer;
-  background-color: rgb(214, 214, 214);
-  color: var(--color-text);
+  background-color: var(--color-btn);
+  color: var(--color-white);
   font-weight: 600;
   font-size: 1rem;
   transition: 0.5s;
 }
 
 .right-btn:hover {
-  background-color: aqua;
+  background-color: #ac4e23;
   color: #ffffff;
 }
 
@@ -229,7 +236,7 @@ body {
   margin: 2.5rem auto;
   height: 0.625rem;
   border-radius: 40px;
-  background-color: aqua;
+  background-color: #152760;
   transition: 0.5s;
 }
 
@@ -248,11 +255,13 @@ body {
 .about > h3 {
   font-size: 1.5rem;
   font-family: var(--font-title);
+  color: var(--color-title-out);
   margin-bottom: 20px;
 }
 
 .about > p {
   line-height: 2rem;
+  color: var(--color-text-out);
 }
 
 /*=========================bamboo=====================*/
@@ -280,8 +289,7 @@ body {
 }
 
 .box03 {
-  opacity: 0.7;
-  background-color: var(--color-background-esgotado);
+  background-color: var(--color-background);
   border-radius: 10px;
   padding: 0.625rem;
   margin-top: 3.125rem;
@@ -307,20 +315,20 @@ body {
 .title-bamboo {
   font-size: 1rem;
   font-family: var(--font-title);
-  color: var(--color-title);
+  color: var(--color-title-inside);
   margin-bottom: 1.25rem;
 }
 
 .descont {
   font-size: 0.9rem;
-  color: rgb(196, 248, 231);
+  color: rgb(196, 196, 196);
   margin-bottom: 1.25rem;
 }
 
 .descricao {
   font-size: 1rem;
   margin-bottom: 1.25rem;
-  color: var(--color-text);
+  color: var(--color-text-inside);
 }
 
 .quantidade {
@@ -329,13 +337,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1a3a52;
+  color: #ffffff;
 }
 
 .left {
   font-size: 0.9rem;
   font-weight: 400;
-  color: #748ba0;
+  color: #f7e8fd;
   margin-left: 0.625rem;
 }
 
@@ -345,7 +353,7 @@ body {
   border: 0;
   outline: none;
   cursor: pointer;
-  background-color: aqua;
+  background-color: var(--color-btn);
   color: var(--color-white);
   font-weight: 600;
   font-size: 1rem;
@@ -353,15 +361,15 @@ body {
 }
 
 .btn:hover {
-  background-color: aquamarine;
-  color: #296392;
+  background-color: #ac4e23;
+  color: #d8dadb;
   transform: translateY(-2px);
 }
 
 /*================Footer==================*/
 
 footer {
-  background-color: rgb(64, 120, 122);
+  background-color: var(--color-footer);
   width: 100%;
   height: 7vh;
   display: flex;
@@ -370,14 +378,14 @@ footer {
 }
 
 footer > p {
-  font-family: var(--color-title);
-  color: var(--color-dark);
+  font-family: var(--font01);
+  color: var(--color-text-inside);
   font-weight: 700;
   font-size: 1rem;
 }
 
 footer > p:hover {
-  color: #9c9ea0;
+  color: #EA6017;
   transform: translateY(5px);
   transition: 0.5s;
 }
