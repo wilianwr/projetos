@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineWil</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="cabeca">
+        <div class="logo">Cine<span id="logo-color">Wil</span></div>
+        <div class="menu">
+          <ul class="lista-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CONOGRAMA</a></li>
+            <li><a href="#">NOVOS LANÇAMENTOS</a></li>
+            <li><a href="#">CONTATO</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <span class="material-symbols-sharp">person</span>
+          <span class="login-usuario">Wilian</span>
+        </div>
+      </div>
+      <div class="principal-filmes">
+        <div class="capa">
+          <img
+            src="img/capa-madmax.jpg.opdownload"
+            width="300px"
+            alt="filme"
+            class="capa"
+          />
+        </div>
+        <div class="descricao">
+          <p>2015</p>
+          <h2 class="titulo-filme">MadMax: Fury Road</h2>
+          <ul class="tipo">
+            <li class="tipo-filme">Ação</li>
+            <li class="tipo-filme">Suspense</li>
+            <li class="tipo-filme">Ficção Cientifica</li>
+          </ul>
+          <p>
+            Mais uma historia no deserto com falta de gasolina e comida eles
+            lutam para a achar um lugar pacifico. Mad Max foi criado pelo
+            diretor australiano George Miller, em 1979. Produzido quase
+            totalmente de forma independente e mostrando uma Austrália distópica
+            em um futuro não especificado, contava a história do policial Max
+            Rockatansky tentando manter a ordem em uma sociedade decadente,
+            comandada por gangues motorizadas.
+          </p>
+          <div class="grupo-descri">
+            <span class="tempo">164 min.</span>
+            <span class="subtitulo">Titulos</span>
+            <span class="nota">Imdb: 9.5/10</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="data-timer">
+        <div class="data">
+          <p>ESCOLHER DATA:</p>
+          <div class="opcoes">
+            <ul>
+              <li>MON</li>
+              <li>TUE</li>
+              <li>WED</li>
+              <li>TH</li>
+            </ul>
+          </div>
+        </div>
+        <div class="time">
+          <p>HORARIOS DISPONIVEL:</p>
+          <div class="opcoes">
+            <ul>
+              <li>11:45</li>
+              <li>12:15</li>
+              <li>13:00</li>
+              <li>13:30</li>
+            </ul>
+          </div>
+        </div>
+        <button id="buy-ticket">Comprar Ingresso</button>
+      </div>
+      <div class="container">
+        <div class="filtro-filmes">
+          <div class="formatos-filtro">
+            <p>Todos os Formatos</p>
+          </div>
+          <div class="data-filtro">
+            <p>Por Data</p>
+          </div>
+          <div class="categoria-filtro">
+            <p>Por Categoria</p>
+          </div>
+          <div class="lancamentos-filtro">
+            <p>Lançamentos</p>
+          </div>
+          <div class="perquisa">
+            <input
+              type="text"
+              class="pesquisa-caixa"
+              id="txtBusca"
+              placeholder="Buscar filme..."
+            />
+            <span class="material-symbols-sharp">search</span>
+          </div>
+        </div>
+        <div class="filmes-container">
+          <div class="boxFilmes">
+            <div class="filme">
+              <img
+                src="img/capa-predador.jpg"
+                width="300px"
+                alt="O predador"
+                class="capa"
+              />
+              <p>O Predador</p>
+              <span>1430min</span>
+              <span>Imdb: 9/10</span>
+            </div>
+            <div class="filme">
+              <img
+                src="img/capa-logan.jpg"
+                width="300px"
+                alt="Logan"
+                class="capa"
+              />
+              <p>Logan</p>
+              <span>120min</span>
+              <span>Imdb: 9.6/10</span>
+            </div>
+            <div class="filme">
+              <img
+                src="img/capa-gravidade.jpg"
+                width="300px"
+                alt="Gravidade"
+                class="capa"
+              />
+              <p>Gravidade</p>
+              <span>110min</span>
+              <span>Imdb: 8.7/10</span>
+            </div>
+            <div class="filme">
+              <img
+                src="img/capa-1917.jpg"
+                width="300px"
+                alt="1917"
+                class="capa"
+              />
+              <p>1917</p>
+              <span>120min</span>
+              <span>Imdb: 9.6/10</span>
+            </div>
+          </div>
+          <div class="boxFilmes">
+            <div class="filme">
+              <img
+                src="img/capa-interestelar.jpg"
+                width="300px"
+                alt="Interestelar"
+                class="capa"
+              />  
+              <p>Interestelar</p>
+              <span>140min</span>
+              <span>Imdb: 9.3/10</span>
+            </div>
+            <div class="filme">
+              <img
+                src="img/capa-Alien-Covenant.jpg"
+                width="300px"
+                alt="Alien"
+                class="capa"
+              />
+              <p>Alien: Convenant</p>
+              <span>140min</span>
+              <span>Imdb: 9/10</span>
+            </div>
+            <div class="filme">
+              <img
+                src="img/capa-love-and-thunder.jpg"
+                width="300px"
+                alt="Thor: Love and Thunder"
+                class="capa"
+              />
+              <p>Thor: Love and Thunder</p>
+              <span>105min</span>
+              <span>Imdb: 8.8/10</span>
+            </div>
+            <div class="filme">
+              <img
+                src="img/capa-aventuras-de-pip.jpg"
+                width="300px"
+                alt="As-aventuras-de-pi"
+                class="capa"
+              />
+              <p>As Aventurasa de PI</p>
+              <span>110min</span>
+              <span>Imdb: 9.4/10</span>
+            </div>
+          </div>
+          <div class="grupo-mais-filmes">
+            <div class="linha"></div>
+            <button class="btn-mais-filmes">Mostrar Mais</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="pe">
+       <div class="logo">Cine<span id="logo-color">Wil</span>
+      <p class="ano-criacao">@2022 - 2022, CineWil</p>
+    </div>
+        <div class="menu">
+         <ul class="lista-menu">
+           <li><a href="#">HOME</a></li>
+           <li><a href="#">CONOGRAMA</a></li>
+           <li><a href="#">NOVOS LANÇAMENTOS</a></li>
+           <li><a href="#">CONTATO</a></li>
+         </ul>
+        </div>
+        <div class="redes-sociais">
+          <img src="img-redes/facebook.svg" alt="facebook">
+          <img src="img-redes/twitter.svg" alt="twitter">
+          <img src="img-redes/instagram.svg" alt="instagram">
+        </div>
+     </div>
+    </footer>
+  </body>
+</html>

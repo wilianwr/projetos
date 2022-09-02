@@ -1,0 +1,371 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --color-dark: #100f0f;
+  --color-grey: rgb(151, 154, 151);
+  --color-red: #bb4035;
+  --color-red-2: #330f0b;
+  --color-red-3: #782b24;
+  --color-white: white;
+
+  --font-principal: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-principal);
+}
+
+header {
+  max-width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/fundo-madmax.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.cabeca {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  margin-top: 1.25rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: var(--font-principal);
+  color: var(--color-white);
+}
+
+#logo-color {
+  color: var(--color-red);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lista-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  padding: 0.6rem;
+  font-family: var(--font-principal);
+  font-weight: 400;
+  list-style: none;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--color-white);
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  background-color: white;
+  color: var(--color-dark);
+  border-radius: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login:hover {
+  background: gray;
+  width: 80px;
+  height: 35px;
+  border-radius: 10%;
+  color: white;
+}
+
+.login-usuario {
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.principal-filmes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 80vh;
+  color: var(--color-white);
+}
+
+.capa {
+  max-width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.15s;
+}
+
+.capa:hover {
+  transform: rotate(-2deg);
+}
+
+.descricao {
+  max-width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.titulo-filme {
+  font-size: 40px;
+}
+
+/*==================Estilo do Filme=================*/
+
+.tipo {
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tipo-filme {
+  padding: 0px 20px 0px 0px;
+}
+
+/*===========Grupos de TEMPO / SUBTITULO / NOTA =====================*/
+
+.grupo-descri {
+  padding: 20px 0px 0px 0px;
+}
+
+.tempo {
+  padding: 0px 10px 0px 0px;
+}
+
+.subtitulo {
+  padding: 0px 10px 0px 0px;
+}
+
+.nota {
+}
+
+/*========================OPÇÕES DO DIA E HORA=========================*/
+
+main {
+  width: 100vw;
+  height: 100%;
+}
+
+.data-timer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 20vh;
+}
+
+.data-timer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+
+.data-timer li:hover {
+  text-decoration: underline red;
+  cursor: pointer;
+}
+
+#buy-ticket {
+  padding: 0.7rem;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+#buy-ticket:hover {
+  background-color: var(--color-white);
+  color: var(--color-red);
+}
+
+/*==================Filtrar filmes===========================*/
+
+.container {
+  background-color: #0b0b0b;
+  color: var(--color-white);
+}
+
+.filtro-filmes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+  max-width: 90vw;
+  margin: auto;
+  text-decoration: underline;
+}
+
+.formatos-filtro:hover {
+  text-decoration: underline red;
+}
+
+.data-filtro:hover {
+  text-decoration: underline red;
+}
+
+.categoria-filtro:hover {
+  text-decoration: underline red;
+}
+
+.lancamentos-filtro:hover {
+  text-decoration: underline red;
+}
+
+.pesquisa {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.pesquisa-caixa {
+  border-radius: 20px;
+  border: none;
+  padding: 7px;
+  background-color: #141414;
+  text-decoration: none;
+  width: 13.75rem;
+  color: var(--color-white);
+}
+
+.filmes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  gap: 40px;
+}
+
+.boxFilmes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 100vw;
+}
+
+.filme p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.filme span {
+  color: var(--color-grey);
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.filme span::before {
+  content: ".";
+  color: red;
+}
+
+.grupo-mais-filmes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.linha {
+  width: 70vw;
+  border: 1px solid rgb(255, 255, 255);
+  margin-bottom: 2.5rem;
+}
+
+.btn-mais-filmes {
+  padding: 0.7rem;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  margin-bottom: 2.5rem;
+}
+
+footer {
+  background-color: #141414;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pe {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.redes-sociais {   
+  width: 1.875rem;
+  display: flex;
+  gap: 0.9375rem;
+  margin-left: 1.25rem;
+}
+
+
+.ano-criacao {
+  font-size: 10px;
+}
+
+/*=========================Responsivel================================*/
+
+@media only screen and(max-width: 900px) {
+ .boxFilmes {
+  display: none;
+ }
+}
